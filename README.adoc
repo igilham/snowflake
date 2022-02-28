@@ -1,0 +1,13 @@
+= Snowflake
+
+A spike of the snowflake specification.
+
+A snowflake fits in a signed 64-bit integer (63 bits)
+
+* 41 bit timestamp in seconds since some configured epoch
+* 10 bit instance/shard/worker ID
+* 12 bit sequence number per worker per timestamp
+
+== Configuration
+
+The Snowflake `Generator` requires an epoch and an instance ID to work.
