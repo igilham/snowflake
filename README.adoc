@@ -11,3 +11,11 @@ A snowflake fits in a signed 64-bit integer (63 bits)
 == Configuration
 
 The Snowflake `Generator` requires an epoch and an instance ID to work.
+
+== Examples
+
+There's one basic example at the moment. Run it with the following command.
+
+```shell
+go run examples/checkSequence.go
+```
