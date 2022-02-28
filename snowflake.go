@@ -6,14 +6,14 @@ import (
 )
 
 const (
-	// MAX_ID is 2^10
-	MAX_ID = 1024
+	// MAX_ID is 2^10 - 1
+	MAX_ID = 1023
 
-	// MAX_SEQUENCE is 2^12
-	MAX_SEQUENCE = 4096
+	// MAX_SEQUENCE is 2^12 - 1
+	MAX_SEQUENCE = 4095
 
-	// MAX_TIME = 2^41
-	MAX_TIME = 2199023255552
+	// MAX_TIME = 2^41 - 1
+	MAX_TIME = 2199023255551
 )
 
 type Snowflake struct {
