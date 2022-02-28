@@ -21,7 +21,7 @@ const (
 
 func main() {
 	epoch := time.Date(EPOCH_YEAR, EPOCH_MONTH, EPOCH_DAY, 0, 0, 0, 0, time.UTC).Unix()
-	fmt.Printf("epoch: %v\n", epoch)
+	fmt.Printf("epoch: %v\n\n", epoch)
 	var id int16 = 1001
 	gen := snowflake.NewGenerator(epoch, id)
 	fmt.Printf("%v\n", gen.Next())
@@ -29,11 +29,14 @@ func main() {
 	fmt.Printf("%v\n", gen.Next())
 	fmt.Printf("%v\n", gen.Next())
 	fmt.Printf("%v\n", gen.Next())
+
+	fmt.Printf("\n...\n\n")
 	dur, err := time.ParseDuration("1s")
 	if err != nil {
 		log.Fatal(err)
 	}
 	time.Sleep(dur)
+
 	fmt.Printf("%v\n", gen.Next())
 	fmt.Printf("%v\n", gen.Next())
 	fmt.Printf("%v\n", gen.Next())
