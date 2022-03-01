@@ -1,6 +1,6 @@
 = Snowflake
 
-A spike of the snowflake specification.
+A spike of the https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake[snowflake specification].
 
 A snowflake fits in a signed 64-bit integer (63 bits)
 
@@ -24,4 +24,4 @@ go run examples/checkSequence.go
 
 == To do
 
-- Handle JSON representation. See [this article](https://developer.twitter.com/ja/docs/basics/twitter-ids).
+- Handle JSON representation. See https://developer.twitter.com/ja/docs/basics/twitter-ids[this article].
