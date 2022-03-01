@@ -22,8 +22,8 @@ const (
 func main() {
 	epoch := time.Date(EPOCH_YEAR, EPOCH_MONTH, EPOCH_DAY, 0, 0, 0, 0, time.UTC).Unix()
 	fmt.Printf("epoch: %v\n\n", epoch)
-	var id int16 = 1001
-	gen := snowflake.NewGenerator(epoch, id)
+	var id uint16 = 1001
+	gen := snowflake.NewWorker(epoch, id)
 	fmt.Printf("%v\n", gen.Next())
 	fmt.Printf("%v\n", gen.Next())
 	fmt.Printf("%v\n", gen.Next())

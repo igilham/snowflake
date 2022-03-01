@@ -8,6 +8,8 @@ A snowflake fits in a signed 64-bit integer (63 bits)
 * 10 bit instance/shard/worker ID
 * 12 bit sequence number per worker per timestamp
 
+The implementation of bit-packing is currently wrong.
+
 == Configuration
 
 The Snowflake `Generator` requires an epoch and an instance ID to work.
@@ -19,3 +21,7 @@ There's one basic example at the moment. Run it with the following command.
 ```shell
 go run examples/checkSequence.go
 ```
+
+== To do
+
+- Handle JSON representation. See [this article](https://developer.twitter.com/ja/docs/basics/twitter-ids).
