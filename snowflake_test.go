@@ -49,6 +49,6 @@ func TestSequenceIncrements(t *testing.T) {
 	s1 := w.Next()
 	s2 := w.Next()
 	if s2.Sequence() <= s1.Sequence() {
-		t.Errorf("Sequence numbering not incrementing")
+		t.Errorf("Sequence numbering not incrementing, s1=%d, s2=%d", s1.Sequence(), s2.Sequence())
 	}
 }
